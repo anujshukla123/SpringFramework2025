@@ -5,7 +5,9 @@
                            http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- Define a simple bean -->
-    <bean id="t" class="beans.Test.Test"/>
+    <bean id="t" class="beans.Test.Test" scope="prototype">
+
+    </bean>
 
 
 </beans>

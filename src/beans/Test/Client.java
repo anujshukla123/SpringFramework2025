@@ -17,7 +17,7 @@ public class Client {
         Object o1=factory.getBean("t");
         Object o2=factory.getBean("t");
         Object o3=factory.getBean("t");
-        System.out.println(o1==o2);
-        System.out.println(o2==o3);
+        System.out.println(o1==o2);//In singleton , object reference to same object, output true
+        System.out.println(o2==o3);///but in prototype, it creates different objects, then we got output as False
     }
 }
