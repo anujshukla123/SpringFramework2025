@@ -13,5 +13,11 @@ public class Client {
     Object o=factory.getBean("t");
     Test t=(Test)o;
     t.hello();
+
+        Object o1=factory.getBean("t");
+        Object o2=factory.getBean("t");
+        Object o3=factory.getBean("t");
+        System.out.println(o1==o2);
+        System.out.println(o2==o3);
     }
 }
