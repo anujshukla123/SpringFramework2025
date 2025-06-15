@@ -8,8 +8,9 @@ public class ClientMain {
 
 //        ApplicationContext context = new ClassPathXmlApplicationContext("resources/Car.xml");//Eager loading
 
-        String files[] = new String[]{"resources/Car.xml","resources/Engine.xml"};
-        ApplicationContext context = new ClassPathXmlApplicationContext(files);//Eager loading
+//        String files[] = new String[]{"resources/Car.xml","resources/Engine.xml"};
+//        ApplicationContext context = new ClassPathXmlApplicationContext(files);//Eager loading
+          ApplicationContext context = new ClassPathXmlApplicationContext("resources/car-engine.xml");//Eager loading
         Car c=(Car) context.getBean("c");
         c.printCarData();
     }
