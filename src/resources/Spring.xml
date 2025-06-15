@@ -5,9 +5,18 @@
                            http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- Define a simple bean -->
-    <bean id="t" class="beans.Test.Test" scope="prototype">
+<!--    <bean id="t" class="beans.Test.Test" >-->
 
+<!--    </bean>-->
+    <!--Below example of Dependency Injection-->
+<!--    <bean id="t" class="SampleDI.Test" >-->
+<!--       <property name="gender" value="Mr."/>-->
+<!--    </bean>-->
+<!--Below example Constructor with index attribut as without index it will assign on the basis of sequence defined-->
+    <bean id="t" class="SetterDI.Test">
+        <constructor-arg value="anujshukla8520@gmail.com" type="String" />
+        <constructor-arg value="Anuj Shukla" type="String" />
+        <constructor-arg value="25" type="int" index="2"/>
     </bean>
-
 
 </beans>

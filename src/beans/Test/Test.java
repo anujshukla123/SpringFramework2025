@@ -2,12 +2,16 @@ package beans.Test;
 
 public class Test {
 
-    public Test() {
-        System.out.println("constructor test");
+    private Test() {
+        System.out.println("private constructor access");
     }
 
-    public void hello(){
+    private void hello(){
 
-        //System.out.println("Hello World");
+        System.out.println("Hello World");
+    }
+    public void eagerLoading(){
+
+        System.out.println("eagerLoading");
     }
 }
